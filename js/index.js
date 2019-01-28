@@ -38,5 +38,28 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+// this separates the code into two separate statements
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Update nav links
+let navLinks = document.querySelectorAll("a");
+navLinks[0].textContent = "Services";
+navLinks[1].textContent = "Product";
+navLinks[2].textContent = "Vision";
+navLinks[3].textContent = "Features";
+navLinks[4].textContent = "About";
+navLinks[5].textContent = "Contact";
+
+
+
+
+// Update img src for the circular code snippet picture in the cta section
+// this combines the statements which does the same thing as when they're separated
+let ctaCodeSnippet = document.getElementById("cta-img").src = siteContent["cta"]["img-src"];
+
+// Update the img src for the wide rectangle code snippet picture in the main-content section
+let mainContentCodeSnippet = document.getElementById("middle-img").src = siteContent["main-content"]["middle-img-src"];
+
+
+
