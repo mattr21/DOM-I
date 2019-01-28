@@ -51,6 +51,12 @@ navLinks[3].textContent = "Features";
 navLinks[4].textContent = "About";
 navLinks[5].textContent = "Contact";
 
+// Update h1 in cta section
+let h1Text = document.querySelector(".cta-text h1").innerHTML = "DOM <br> IS <br> AWESOME";
+
+// Update button in cta section
+let buttonText = document.querySelector(".cta button").textContent = "Get Started";
+
 
 
 
