@@ -38,5 +38,84 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+// this separates the code into two separate statements but you can combine them
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Update nav links
+let navLinks = document.querySelectorAll("a");
+navLinks[0].textContent = siteContent.nav["nav-item-1"]; // Text
+navLinks[0].style.color = "red"; // Text color
+
+navLinks[1].textContent = siteContent.nav["nav-item-2"];
+navLinks[1].style.color = "red";
+
+navLinks[2].textContent = siteContent.nav["nav-item-3"];
+navLinks[2].style.color = "red";
+
+navLinks[3].textContent = siteContent.nav["nav-item-4"];
+navLinks[3].style.color = "red";
+
+navLinks[4].textContent = siteContent.nav["nav-item-5"];
+navLinks[4].style.color = "red";
+
+navLinks[5].textContent = siteContent.nav["nav-item-6"];
+navLinks[5].style.color = "red";
+
+// Add two new nav items
+let navbar = document.getElementsByTagName("nav");
+
+let newA1 = document.createElement("a");
+newA1.textContent = "Fund";
+document.getElementsByTagName("nav")[0].appendChild(newA1)
+newA1.style.color = "red";
+newA1.style.cursor = "pointer";
+
+let newA2 = document.createElement("a");
+newA2.textContent = "Join";
+document.getElementsByTagName("nav")[0].prepend(newA2);
+newA2.style.color="red";
+newA2.style.cursor = "pointer";
+
+
+
+
+
+
+const newDiv2 = document.createElement("a")
+
+// Update h1 in cta section
+let h1Text = document.querySelector(".cta-text h1").innerHTML = "DOM <br> IS <br> AWESOME";
+
+// Update button in cta section
+let buttonText = document.querySelector(".cta button").textContent = siteContent["cta"]["button"];
+
+// Update h4s
+let h4s = document.querySelectorAll("h4");
+h4s[0].textContent = siteContent["main-content"]["features-h4"];
+h4s[1].textContent = siteContent["main-content"]["about-h4"];
+h4s[2].textContent = siteContent["main-content"]["services-h4"];
+h4s[3].textContent = siteContent["main-content"]["product-h4"];
+h4s[4].textContent = siteContent["main-content"]["vision-h4"];
+h4s[5].textContent = siteContent["contact"]["contact-h4"];
+
+// Update p
+let paragraphs = document.querySelectorAll("p");
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
+paragraphs[5].innerHTML = "123 Way 456 Street <br> Somewhere, USA"
+paragraphs[6].textContent = siteContent["contact"]["phone"];
+paragraphs[7].textContent = siteContent["contact"]["email"];
+paragraphs[8].textContent = siteContent["footer"]["copyright"];
+
+// Update img src for the circular code snippet picture in the cta section
+let ctaCodeSnippet = document.getElementById("cta-img").src = siteContent["cta"]["img-src"];
+
+// Update the img src for the wide rectangle code snippet picture in the main-content section
+let mainContentCodeSnippet = document.getElementById("middle-img").src = siteContent["main-content"]["middle-img-src"];
+
+
+
