@@ -44,12 +44,45 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Update nav links
 let navLinks = document.querySelectorAll("a");
-navLinks[0].textContent = siteContent.nav["nav-item-1"];
+navLinks[0].textContent = siteContent.nav["nav-item-1"]; // Text
+navLinks[0].style.color = "red"; // Text color
+
 navLinks[1].textContent = siteContent.nav["nav-item-2"];
+navLinks[1].style.color = "red";
+
 navLinks[2].textContent = siteContent.nav["nav-item-3"];
+navLinks[2].style.color = "red";
+
 navLinks[3].textContent = siteContent.nav["nav-item-4"];
+navLinks[3].style.color = "red";
+
 navLinks[4].textContent = siteContent.nav["nav-item-5"];
+navLinks[4].style.color = "red";
+
 navLinks[5].textContent = siteContent.nav["nav-item-6"];
+navLinks[5].style.color = "red";
+
+// Add two new nav items
+let navbar = document.getElementsByTagName("nav");
+
+let newA1 = document.createElement("a");
+newA1.textContent = "Fund";
+document.getElementsByTagName("nav")[0].appendChild(newA1)
+newA1.style.color = "red";
+newA1.style.cursor = "pointer";
+
+let newA2 = document.createElement("a");
+newA2.textContent = "Join";
+document.getElementsByTagName("nav")[0].prepend(newA2);
+newA2.style.color="red";
+newA2.style.cursor = "pointer";
+
+
+
+
+
+
+const newDiv2 = document.createElement("a")
 
 // Update h1 in cta section
 let h1Text = document.querySelector(".cta-text h1").innerHTML = "DOM <br> IS <br> AWESOME";
