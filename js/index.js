@@ -44,39 +44,39 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Update nav links
 let navLinks = document.querySelectorAll("a");
-navLinks[0].textContent = "Services";
-navLinks[1].textContent = "Product";
-navLinks[2].textContent = "Vision";
-navLinks[3].textContent = "Features";
-navLinks[4].textContent = "About";
-navLinks[5].textContent = "Contact";
+navLinks[0].textContent = siteContent.nav["nav-item-1"];
+navLinks[1].textContent = siteContent.nav["nav-item-2"];
+navLinks[2].textContent = siteContent.nav["nav-item-3"];
+navLinks[3].textContent = siteContent.nav["nav-item-4"];
+navLinks[4].textContent = siteContent.nav["nav-item-5"];
+navLinks[5].textContent = siteContent.nav["nav-item-6"];
 
 // Update h1 in cta section
 let h1Text = document.querySelector(".cta-text h1").innerHTML = "DOM <br> IS <br> AWESOME";
 
 // Update button in cta section
-let buttonText = document.querySelector(".cta button").textContent = "Get Started";
+let buttonText = document.querySelector(".cta button").textContent = siteContent["cta"]["button"];
 
 // Update h4s
 let h4s = document.querySelectorAll("h4");
-h4s[0].textContent = "FEATURES";
-h4s[1].textContent = "ABOUT";
-h4s[2].textContent = "SERVICES";
-h4s[3].textContent = "PRODUCT";
-h4s[4].textContent = "VISION";
-h4s[5].textContent = "CONTACT";
+h4s[0].textContent = siteContent["main-content"]["features-h4"];
+h4s[1].textContent = siteContent["main-content"]["about-h4"];
+h4s[2].textContent = siteContent["main-content"]["services-h4"];
+h4s[3].textContent = siteContent["main-content"]["product-h4"];
+h4s[4].textContent = siteContent["main-content"]["vision-h4"];
+h4s[5].textContent = siteContent["contact"]["contact-h4"];
 
 // Update p
 let paragraphs = document.querySelectorAll("p");
-paragraphs[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[5].textContent = "";
-paragraphs[6].textContent = "";
-paragraphs[7].textContent = "";
-paragraphs[8].textContent = "";
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
+paragraphs[5].innerHTML = "123 Way 456 Street <br> Somewhere, USA"
+paragraphs[6].textContent = siteContent["contact"]["phone"];
+paragraphs[7].textContent = siteContent["contact"]["email"];
+paragraphs[8].textContent = siteContent["footer"]["copyright"];
 
 // Update img src for the circular code snippet picture in the cta section
 let ctaCodeSnippet = document.getElementById("cta-img").src = siteContent["cta"]["img-src"];
